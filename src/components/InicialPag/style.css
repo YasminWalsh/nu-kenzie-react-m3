@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+
+.Container {
+  min-height: 100vh;
+  width: 100%;
+  /* max-width: 1600px; */
+  margin: 0 auto;
+  padding: 0.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #212529;
+}
+
+.boxIntro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 440px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.boxInfos {
+  display: flex;
+  flex-direction: column;
+  max-width: 380px;
+  gap: 1rem;
+}
+
+.boxInfos p:first-child {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+}
+
+.boxInfos p:nth-child(2) {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.boxInfos > button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  max-width: 264px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #fd377e;
+  border: 2px #fd377e solid;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+.boxInfos > button:hover {
+  transition: 1s;
+  box-shadow: 0 0 0.5em white;
+}
+
+.imgPageInitial {
+  display: flex;
+  justify-content: center;
+}
+
+.imgPageInitial > img {
+  width: 80%;
+}
+
+@media (max-width: 705px) {
+  .Container {
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .boxIntro {
+    align-items: center;
+  }
+  .boxInfos {
+    align-items: center;
+    text-align: center;
+  }
+}
